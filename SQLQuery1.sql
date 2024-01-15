@@ -1,0 +1,15 @@
+CREATE DATABASE EXAMPLE1912
+USE EXAMPLE1912
+
+CREATE TABLE ThongtinSV (MSSV VARCHAR(10), Name TEXT, Address TEXT, TelephoneNumber INT) 
+ALTER TABLE ThongtinSV ADD Point INT
+
+INSERT INTO ThongtinSV values (2121050440,'Nguyen Duy Thang 1', 'SL-VP', 123456, 3)
+INSERT INTO ThongtinSV values (2121050440,'Nguyen Duy Thang 2', 'SL-VP', 123456, 4)
+INSERT INTO ThongtinSV values (2121050440,'Nguyen Duy Thang 3', 'SL-VP', 123456, 3)
+
+SELECT * FROM ThongtinSV
+
+UPDATE ThongtinSV SET MSSV=2121050445 WHERE Point=4
+
+
